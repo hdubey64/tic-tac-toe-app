@@ -1,12 +1,38 @@
 .grid {
    height: 500px;
-   width: 600px;
+   width: 400px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
    align-items: center;
-   gap: 20px;
 }
-.gridWrapper {
+.left {
    color: White;
+}
+.turn-highlight {
+   color: White;
+}
+.winnerHighlight {
+   color: rgb(0, 227, 0);
+}
+.main {
+   height: 99vh;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   place-items: center;
+}
+button {
+   background-color: var(--yellow);
+   font-size: 1.5rem;
+   color: white;
+   font-weight: bold;
+   padding: 7px 12px;
+   border: none;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+button:hover {
+   color: var(--yellow);
+   background-color: white;
 }
